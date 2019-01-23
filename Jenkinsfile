@@ -42,17 +42,17 @@ pipeline {
         parallel {
           stage('Java Scan') {
            steps {
-              nexusPolicyEvaluation(iqApplication: 'test-components-la', iqStage: 'build', iqScanPatterns: [[scanPattern: 'java-dependencies.tar.gz']])
+              nexusPolicyEvaluation(iqApplication: 'test-components-la', iqStage: 'operate', iqScanPatterns: [[scanPattern: 'java-dependencies.tar.gz']])
            }
          }
          stage('NPM Scan') {
            steps {
-              nexusPolicyEvaluation(iqApplication: 'npm', iqStage: 'build', iqScanPatterns: [[scanPattern: 'nodeGoat.tar.gz']])
+              nexusPolicyEvaluation(iqApplication: 'npm', iqStage: 'operate', iqScanPatterns: [[scanPattern: 'nodeGoat.tar.gz']])
            }
          }
          stage('PyPi Scan') {
            steps {
-              nexusPolicyEvaluation(iqApplication: 'PyPi', iqStage: 'build', iqScanPatterns: [[scanPattern: 'requirements.txt']])
+              nexusPolicyEvaluation(iqApplication: 'PyPi', iqStage: 'operate', iqScanPatterns: [[scanPattern: 'requirements.txt']])
            }
          }
         }
