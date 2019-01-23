@@ -35,7 +35,7 @@ case "${VERSION}" in
     REPO_URL=http://ec2-54-165-203-133.compute-1.amazonaws.com:8081/repository/maven-quarentine/
     ;;
   3)
-    REPO_URL=http://ec2-54-165-203-133.compute-1.amazonaws.com:8081/repository/central/
+    REPO_URL=http://ec2-54-165-203-133.compute-1.amazonaws.com:8081/repository/maven-central/
     ;;
 esac
 
