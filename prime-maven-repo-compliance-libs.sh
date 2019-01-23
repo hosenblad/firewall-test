@@ -32,10 +32,10 @@ done
 
 case "${VERSION}" in
   2)
-    REPO_URL=http://nexus:8081/repository/maven-quarentine/
+    REPO_URL=http://ec2-54-165-203-133.compute-1.amazonaws.com:8081/repository/maven-quarentine/
     ;;
   3)
-    REPO_URL=http://nexus:8081/repository/central/
+    REPO_URL=http://ec2-54-165-203-133.compute-1.amazonaws.com:8081/repository/central/
     ;;
 esac
 
